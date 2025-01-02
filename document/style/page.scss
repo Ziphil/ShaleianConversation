@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@use "./variable.scss" as *;
+
+
+@page {
+  size: $page-width $page-height;
+  bleed: 0q;
+}
+
+@page :left {
+  margin-block-start: $page-margin-top;
+  margin-block-end: $page-margin-bottom;
+  margin-inline-start: $page-margin-outer;
+  margin-inline-end: $page-margin-inner;
+  @bottom-left {
+    font-family: $special-font-family;
+    color: $dark-color;
+    content: counter(page);
+  }
+}
+
+@page :right {
+  margin-block-start: $page-margin-top;
+  margin-block-end: $page-margin-bottom;
+  margin-inline-start: $page-margin-inner;
+  margin-inline-end: $page-margin-outer;
+  @bottom-right {
+    font-family: $special-font-family;
+    color: $dark-color;
+    content: counter(page);
+  }
+}
+
+html {
+  font-size: 12.5q;
+  font-family: $serif-font-family;
+  font-feature-settings: "lnum" 1;
+  color: black;
+  text-spacing-trim: trim-auto;
+}
