@@ -21,6 +21,7 @@ manager.registerElementRule("lesson", "root", (transformer, document, element) =
     }
     self.appendChild(transformer.call("lesson-header-left", element));
     self.appendChild(transformer.call("lesson-header-right", element));
+    self.appendChild(transformer.call("page"));
     self.appendChild(transformer.apply(element, "lesson"));
   });
   return self;
