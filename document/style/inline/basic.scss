@@ -8,3 +8,16 @@
   width: 0.5em;
   display: inline-block;
 }
+
+.word {
+  row-gap: 2q;
+  line-height: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-prounciation {
+  font-size: 9q;
+  letter-spacing: -0.1em;
+}

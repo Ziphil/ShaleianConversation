@@ -4,9 +4,8 @@
 @use "sass:math" as *;
 
 
-$lesson-header-top-height: 56q;
-$lesson-header-bottom-height: 40q;
-$lesson-header-ornament-width: 128q;
+$lesson-header-height: 80q;
+$lesson-header-top-margin: 20q;
 
 .lesson {
   break-before: left;
@@ -14,135 +13,98 @@ $lesson-header-ornament-width: 128q;
 }
 
 .lesson-header {
-  margin-block-start: - $page-margin-top - $bleed-size;
+  width: calc(100vw + $page-margin-inner + $page-margin-outer);
+  height: $lesson-header-height;
+  margin-block-start: $lesson-header-top-margin;
   margin-block-end: $page-block-gap;
-  margin-inline-start: - $page-margin-outer - $bleed-size;
-  margin-inline-end: - $page-margin-inner - $bleed-size;
-  position: relative;
-  z-index: 0;
-}
-
-.lesson-header-main-top {
-  height: $lesson-header-top-height + $bleed-size;
-  padding-block-end: 6q;
-  padding-inline-start: 14q + $lesson-header-ornament-width + $bleed-size;
-  font-family: "Vekos";
-  font-size: 16q;
-  letter-spacing: 0.05em;
+  column-gap: 12q;
+  color: white;
   background-color: $dark-color;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  color: white;
-  z-index: 1;
-}
-
-.lesson-header-main-bottom {
-  height: $lesson-header-bottom-height;
-  padding-inline-start: 12q + $lesson-header-ornament-width + $bleed-size;
-  font-size: 24q;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  background-color: $light-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-}
-
-.lesson-header-ornament-top {
-  inset-block-start: 0q;
-  inset-inline-start: -40q;
-  width: $lesson-header-ornament-width + $bleed-size + 40q - div($lesson-header-top-height + $bleed-size, tan(90deg - $skew-degree) * 2);
-  height: $lesson-header-top-height + $bleed-size;
-  position: absolute;
-  z-index: 3;
-  &::before {
-    inset: 0q;
-    border-inline-end: solid white 8q;
-    transform: skew($skew-degree);
-    background-color: $dark-color;
-    background-clip: padding-box;
-    position: absolute;
-    content: "";
-  }
-  &::after {
-    inset-block-end: -32q;
-    inset-inline-end: 16q;
-    font-family: $special-font-family;
-    font-size: 56q;
-    font-weight: 600;
-    letter-spacing: -0.05em;
-    color: white;
-    position: absolute;
-    content: attr(data-number);
-  }
-}
-
-.lesson-header-ornament-bottom {
-  inset-block-start: $lesson-header-top-height + $bleed-size;
-  inset-inline-start: -40q;
-  width: $lesson-header-ornament-width + $bleed-size + 40q - div($lesson-header-bottom-height, tan(90deg - $skew-degree) * 2);
-  height: $lesson-header-bottom-height;
-  position: absolute;
-  z-index: 2;
-  &::before {
-    inset: 0q;
-    border-inline-end: solid white 8q;
-    transform: skew(- $skew-degree);
-    background-color: $dark-color;
-    background-clip: padding-box;
-    position: absolute;
-    content: "";
-  }
-}
-
-.lesson-running {
-  width: 100vw;
-  height: 100%;
-  margin-block-end: $page-block-gap;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  border-block-end: solid $border-width $dark-color;
-  z-index: -1;
   &[data-position="left"] {
-    justify-content: flex-start;
-    position: running(lesson-left);  
+    margin-inline-start: - $page-margin-outer;
+    margin-inline-end: - $page-margin-inner;
+    padding-inline-start: $page-margin-outer;
+    position: running(lesson-left);
   }
+  &[data-position="right"] {
+    margin-inline-start: - $page-margin-inner;
+    margin-inline-end: - $page-margin-outer;
+    padding-inline-end: $page-margin-outer; 
+    position: running(lesson-right);
+  }
+}
+
+.lesson-header-number {
+  padding-block-start: 8q;
+  font-size: 64q;
+  font-family: $special-font-family;
+  flex: 0 0 auto;
+  align-self: center;
+  position: relative;
+}
+
+.lesson-header-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.lesson-header-column-top {
+  font-size: 16q;
+  letter-spacing: 0.05em;
+  font-family: $sans-font-family;
+  color: $pale-dark-color;
+  display: flex;
+  align-items: center;
+  flex: 5 5 0q;
+}
+
+.lesson-header-column-bottom {
+  font-size: 16q;
+  letter-spacing: 0.05em;
+  border-block-start: dotted 3q white;
+  display: flex;
+  align-items: center;
+  flex: 8 8 0q;
   &[data-position="right"] {
     justify-content: flex-end;
-    position: running(lesson-right);  
   }
 }
 
-.lesson-running-inner {
-  display: flex;
-  align-items: baseline;
-  &[data-position="left"] {
-    flex-direction: row-reverse;
-  }
-  &[data-position="right"] {
-    flex-direction: row;
-  }
+.lesson-header-title {
+  font-size: 24q;
+  font-weight: bold;
 }
 
-.lesson-running-text {
-  &[data-position="left"] {
-    margin-inline-start: 0.4em;
-  }
-  &[data-position="right"] {
+.lesson-header-goal {
+  font-size: 11q;
+  line-height: $line-height;
+  list-style: none;
+}
+
+.lesson-header-goal-item {
+  &::before {
     margin-inline-end: 0.4em;
+    width: 0.6em * div(tan(60deg), 2);
+    height: 0.6em;
+    background-color: $pale-dark-color;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    transform: translate(0em, -0.1em);
+    display: inline-block;
+    content: "";
   }
 }
 
 @page lesson:left {
+  margin-block-start: $lesson-header-height + $lesson-header-top-margin + $page-block-gap;
   @top-center {
     content: element(lesson-left);
   }
 }
 
 @page lesson:right {
+  margin-block-start: $lesson-header-height + $lesson-header-top-margin + $page-block-gap;
   @top-center {
     content: element(lesson-right);
   }

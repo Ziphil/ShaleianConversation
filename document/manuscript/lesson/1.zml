@@ -2,8 +2,45 @@
 \xml?|version="1.0",encoding="UTF-8"|;
 
 
-\lesson|id="neko"|<
+\lesson|id="first"|<
+  \title<初めまして。>
 
-  ねこねこ。
+  \goal<
+    \li<基本的な挨拶を覚えましょう。>
+    \li<「/A/ は /B/ です」という表現を学びましょう。>
+  >
+
+  \sit<
+    ここに状況が入ります。
+  >
+
+  \shconv<
+    \li<
+      \name<{ʻxastil}>
+      \sen<
+        \wd<\sh<{yâ}>\pr<ヤー>>[!]
+      >
+    >
+    \li<
+      \name<{ʻkaolu}>
+      \sen<
+        \wd<\sh<{sîya}>\pr<スィヤー>>[!]
+      >
+    >
+    \li<
+      \name<{ʻxastil}>
+      \sen<
+        \wd<\sh<{salat}>\pr<サーラ>>
+        \wd<\sh<{a}>\pr<タ>>
+        \wd<\sh<{tel}>\pr<テー>>
+        \wd<\sh<{e}>\pr<レ>>
+        [ʻ]\wd<\sh<{xastil}>\pr<シャスティール>>[.]
+      >
+    >
+  >
+
+  \jaconv<
+    aaa
+  >
 
 >

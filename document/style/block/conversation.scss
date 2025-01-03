@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@use "../variable.scss" as *;
+@use "sass:math" as *;
+
+
+.shaleian-conversation {
+  list-style: none;
+}
+
+.shaleian-conversation-item {
+  column-gap: 12q;
+  display: flex;
+  align-items: baseline;
+  & +& {
+    margin-block-start: 8q;
+  }
+}
+
+.shaleian-conversation-name {
+  width: 48q;
+  font-size: 12.5q;
+  text-align: end;
+  flex: 0 0 auto;
+  &::after {
+    margin-inline-start: 0.2em;
+    content: ":";
+  }
+}
+
+.shaleian-conversation-sentence {
+  font-size: 20q;
+  line-height: $line-height;
+  flex: 1 1 auto;
+}
+
+.japanese-conversation {
+  break-before: page;
+}

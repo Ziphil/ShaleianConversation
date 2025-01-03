@@ -27,4 +27,31 @@ manager.registerElementRule("hs", true, (transformer, document, element) => {
   return self;
 });
 
+manager.registerElementRule("wd", true, (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("span", (self) => {
+    self.addClassName("word");
+    self.appendChild(transformer.apply(element, "word"));
+  });
+  return self;
+});
+
+manager.registerElementRule("sh", "word", (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("span", (self) => {
+    self.addClassName("word-shaleian");
+    self.appendChild(transformer.apply(element, "common"));
+  });
+  return self;
+});
+
+manager.registerElementRule("pr", "word", (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("span", (self) => {
+    self.addClassName("word-prounciation");
+    self.appendChild(transformer.apply(element, "common"));
+  });
+  return self;
+});
+
 export default manager;
