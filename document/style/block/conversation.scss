@@ -5,20 +5,18 @@
 
 
 .shaleian-conversation {
-  list-style: none;
+  column-gap: 12q;
+  row-gap: 12q;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: baseline;
 }
 
 .shaleian-conversation-item {
-  column-gap: 12q;
-  display: flex;
-  align-items: baseline;
-  & +& {
-    margin-block-start: 8q;
-  }
+  display: contents;
 }
 
 .shaleian-conversation-name {
-  width: 48q;
   font-size: 12.5q;
   text-align: end;
   flex: 0 0 auto;
@@ -35,5 +33,29 @@
 }
 
 .japanese-conversation {
+  column-gap: 6q;
+  row-gap: 8q;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: baseline;
   break-before: page;
+}
+
+.japanese-conversation-item {
+  display: contents;
+}
+
+.japanese-conversation-name {
+  font-size: 10q;
+  text-align: end;
+  flex: 0 0 auto;
+  &::after {
+    margin-inline-start: 0.2em;
+    content: ":";
+  }
+}
+
+.japanese-conversation-sentence {
+  line-height: $line-height;
+  flex: 1 1 auto;
 }

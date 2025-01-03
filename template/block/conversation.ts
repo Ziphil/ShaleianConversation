@@ -50,4 +50,31 @@ manager.registerElementRule("jaconv", "lesson", (transformer, document, element)
   return self;
 });
 
+manager.registerElementRule("li", "jaconv", (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("li", (self) => {
+    self.addClassName("japanese-conversation-item");
+    self.appendChild(transformer.apply(element, "jaconv.li"));
+  });
+  return self;
+});
+
+manager.registerElementRule("name", "jaconv.li", (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("div", (self) => {
+    self.addClassName("japanese-conversation-name");
+    self.appendChild(transformer.apply(element, "common"));
+  });
+  return self;
+});
+
+manager.registerElementRule("sen", "jaconv.li", (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("p", (self) => {
+    self.addClassName("japanese-conversation-sentence");
+    self.appendChild(transformer.apply(element, "common"));
+  });
+  return self;
+});
+
 export default manager;
