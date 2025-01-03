@@ -45,7 +45,16 @@ manager.registerElementRule("sen", "shconv.li", (transformer, document, element)
   const self = document.createDocumentFragment();
   self.appendElement("p", (self) => {
     self.addClassName("shaleian-conversation-sentence");
-    self.appendChild(transformer.apply(element, "common"));
+    self.appendChild(transformer.apply(element, "shconv.li.sen"));
+  });
+  return self;
+});
+
+manager.registerElementRule("em", "shconv.li.sen", (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("em", (self) => {
+    self.addClassName("shaleian-conversation-emphasis");
+    self.appendChild(transformer.apply(element));
   });
   return self;
 });

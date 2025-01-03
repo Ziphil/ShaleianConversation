@@ -11,7 +11,7 @@
 }
 
 .shaleian-conversation {
-  column-gap: 12q;
+  column-gap: 10q;
   row-gap: 12q;
   display: grid;
   grid-template-columns: max-content 1fr;
@@ -34,8 +34,14 @@
 
 .shaleian-conversation-sentence {
   font-size: 20q;
-  line-height: $line-height;
+  line-height: 2;
+  word-spacing: 0.1em;
   flex: 1 1 auto;
+}
+
+.shaleian-conversation-emphasis {
+  font-weight: bold;
+  font-style: initial;
 }
 
 .japanese-conversation {

@@ -10,7 +10,7 @@
 }
 
 .word {
-  row-gap: 2q;
+  row-gap: 3q;
   line-height: 1;
   display: inline-flex;
   flex-direction: column;
@@ -18,6 +18,8 @@
 }
 
 .word-prounciation {
+  margin-inline: -100em;
   font-size: 9q;
   letter-spacing: -0.1em;
+  font-weight: normal;
 }

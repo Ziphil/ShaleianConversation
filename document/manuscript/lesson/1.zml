@@ -3,7 +3,7 @@
 
 
 \lesson|id="first"|<
-  \title<初めまして。>
+  \title<あなたは学生ですか?>
 
   \goal<
     \li<基本的な挨拶を覚えましょう。>
@@ -16,15 +16,48 @@
 
   \shconv<
     \li<
-      \name<{ʻxastil}>
+      \name<{ʻkaolus}>
       \sen<
-        \wd<\sh<{yâ}>\pr<ヤー>>[!]
+        \wd<\sh<{yo}>\pr<ヨ>>
+        \wd<\sh<{loc}>\pr<ローツ>>[,]
+        \em*<
+          \wd<\sh<{pa}>\pr<パ>>
+          \wd<\sh<{salat}>\pr<サーラ>>
+          \wd<\sh<{a}>\pr<タ>>
+          \wd<\sh<{loc}>\pr<ロー>>
+          \wd<\sh<{e}>\pr<ツェ>>
+        >
+        \wd<\sh<{zissohiz}>\pr<ジッソヒーズ>>[?]
       >
     >
     \li<
-      \name<{ʻkaolu}>
+      \name<{ʻxastil}>
       \sen<
-        \wd<\sh<{sîya}>\pr<スィヤー>>[!]
+        \wd<\sh<{sîya}>\pr<スィヤー>>[.]
+        \wd<\sh<{ya}>\pr<ヤー>>[,]
+        \em*<
+          \wd<\sh<{salat}>\pr<サーラ>>
+          \wd<\sh<{a}>\pr<タ>>
+          \wd<\sh<{tel}>\pr<テー>>
+          \wd<\sh<{e}>\pr<レ>>
+        >
+        \wd<\sh<{zissohiz}>\pr<ジッソヒーズ>>[.]
+      >
+    >
+    \li<
+      \name<{ʻkaolus}>
+      \sen<
+        \wd<\sh<{salat}>\pr<サーラ>>
+        \wd<\sh<{a}>\pr<タ>>
+        \wd<\sh<{tel}>\pr<テー>>
+        \wd<\sh<{evoc}>\pr<レヴォー>>
+        \wd<\sh<{e}>\pr<ツェ>>
+        \wd<\sh<{zissohiz}>\pr<ジッソヒーズ>>[.]
+        \wd<\sh<{salat}>\pr<サーラ>>
+        \wd<\sh<{a}>\pr<タ>>
+        \wd<\sh<{tel}>\pr<テー>>
+        \wd<\sh<{e}>\pr<レ>>
+        [ʻ]\wd<\sh<{kaolus}>\pr<カオルース>>[.]
       >
     >
     \li<
@@ -35,6 +68,35 @@
         \wd<\sh<{tel}>\pr<テー>>
         \wd<\sh<{e}>\pr<レ>>
         [ʻ]\wd<\sh<{xastil}>\pr<シャスティール>>[.]
+        \wd<\sh<{dilfe}>\pr<ディルフェー>>[.]
+      >
+    >
+    \li<
+      \name<{ʻkaolus}>
+      \sen<
+        \em*<
+          \wd<\sh<{pa}>\pr<パ>>
+          \wd<\sh<{salat}>\pr<サーラ>>
+          \wd<\sh<{a}>\pr<タ>>
+          \wd<\sh<{fit}>\pr<フィー>>
+          \wd<\sh<{e}>\pr<テ>>
+        >
+        \wd<\sh<{soxal}>\pr<ソシャール>>[?]
+      >
+    >
+    \li<
+      \name<{ʻxastil}>
+      \sen<
+        \wd<\sh<{ya}>\pr<ヤー>>[,]
+        \em*<
+          \wd<\sh<{salat}>\pr<サーラ>>
+          \wd<\sh<{a}>\pr<タ>>
+          \wd<\sh<{fit}>\pr<フィー>>
+          \wd<\sh<{e}>\pr<テ>>
+        >
+        \wd<\sh<{soxal}>\pr<ソシャール>>[.]
+        \wd<\sh<{s'e}>\pr<セ>>
+        \wd<\sh<{anisxok}>\pr<ラニッショーク>>[.]
       >
     >
   >
@@ -54,7 +116,7 @@
     >
     \li<
       \name<シャスティル>
-      \sen<私はシャスティルです。よろしくお願いします。>
+      \sen<私はシャスティルです。よろしくね。>
     >
     \li<
       \name<カオル>
@@ -68,13 +130,21 @@
   >
 
   \wordl<
-    \li<\cat<動>\sh<{yo}>\eql<\li<\cat<動>\ja<～よ (呼びかけ)>>>>
-    \li<\cat<動>\sh<{loc}>\eql<\li<\cat<動>\ja<あなた>>>>
-    \li<\cat<動>\sh<{sîya}>\eql<\li<\cat<動>\ja<こんにちは>>>>
+    \li<\cat<助>\sh<{yo}>\eql<\li<\cat<助>\ja<～よ (呼びかけ)>>>>
+    \li<\cat<名>\sh<{loc}>\eql<\li<\cat<名>\ja<あなた>>>>
+    \li<\cat<機>\sh<{pa}>\eql<\li<\cat<機>\ja<～か (疑問)>>>>
     \li<\cat<動>\sh<{sal}>\shc<({salat})>\eql<\li<\cat<動>\ja<である>>>>
-    \li<\cat<動>\sh<{a}>\eql<\li<\cat<動>\ja<～は, ～が>>>>
-    \li<\cat<動>\sh<{tel}>\eql<\li<\cat<動>\ja<私>>>>
-    \li<\cat<動>\sh<{e}>\eql<\li<\cat<動>\ja<～を>>>>
+    \li<\cat<助>\sh<{a}>\eql<\li<\cat<助>\ja<～は, ～が>>>>
+    \li<\cat<助>\sh<{e}>\eql<\li<\cat<助>\ja<～を>>>>
+    \li<\cat<名>\sh<{zissohiz}>\eql<\li<\cat<名>\ja<学生>>>>
+    \li<\cat<間>\sh<{sîya}>\eql<\li<\cat<間>\ja<こんにちは>>>>
+    \li<\cat<間>\sh<{ya}>\eql<\li<\cat<間>\ja<はい>>>>
+    \li<\cat<名>\sh<{tel}>\eql<\li<\cat<名>\ja<私>>>>
+    \li<\cat<特>\sh<{voc}>\shc<({evoc})>\eql<\li<\cat<特>\ja<も>>>>
+    \li<\cat<間>\sh<{dife}>\eql<\li<\cat<間>\ja<よろしく>>>>
+    \li<\cat<名>\sh<{fit}>\eql<\li<\cat<名>\ja<これ>>>>
+    \li<\cat<名>\sh<{soxal}>\eql<\li<\cat<名>\ja<教科書, 参考書>>>>
+    \li<\cat<動>\sh<{nisxok}>\shc<({anisxok})>\eql<\li<\cat<形>\ja<おもしろい>>>>
   >
 
 >
