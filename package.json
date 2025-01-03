@@ -1,9 +1,9 @@
 {
-  "name": "shaleian-introduction-second",
+  "name": "shaleian-conversation",
   "version": "0.0.0",
   "author": "Ziphil",
   "description": "",
-  "homepage": "https://github.com/Ziphil/ShaleianIntroductionSecond",
+  "homepage": "https://github.com/Ziphil/ShaleianConversation",
   "main": "dist/index.js",
   "scripts": {
     "develop": "run-p develop:*",
