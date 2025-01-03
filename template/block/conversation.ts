@@ -5,6 +5,15 @@ import {VivliostyleTemplateManager} from "@zenml/vivliostyle";
 
 const manager = new VivliostyleTemplateManager();
 
+manager.registerElementRule("sit", "lesson", (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("p", (self) => {
+    self.addClassName("situation");
+    self.appendChild(transformer.apply(element, "common"));
+  });
+  return self;
+});
+
 manager.registerElementRule("shconv", "lesson", (transformer, document, element) => {
   const self = document.createDocumentFragment();
   self.appendElement("ol", (self) => {

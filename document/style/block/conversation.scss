@@ -4,6 +4,12 @@
 @use "sass:math" as *;
 
 
+.situation {
+  margin-block-end: 16q;
+  font-weight: bold;
+  line-height: $line-height;
+}
+
 .shaleian-conversation {
   column-gap: 12q;
   row-gap: 12q;
