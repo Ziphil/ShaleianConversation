@@ -4,6 +4,7 @@
 
 \root<
 
-  &import|src="document/manuscript/lesson/1.zml"|;
+  &import|src="document/manuscript/lesson/1-lesson.zml"|;
+  &import|src="document/manuscript/lesson/1-explanation.zml"|;
 
 >

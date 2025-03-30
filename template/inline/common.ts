@@ -23,6 +23,15 @@ manager.registerElementRule("i", true, (transformer, document, element) => {
   return self;
 });
 
+manager.registerElementRule("n", true, (transformer, document, element) => {
+  const self = document.createDocumentFragment();
+  self.appendElement("span", (self) => {
+    self.addClassName("normal-sans");
+    self.appendChild(transformer.apply());
+  });
+  return self;
+});
+
 manager.registerElementRule("k", true, (transformer, document, element) => {
   const self = document.createDocumentFragment();
   self.appendElement("span", (self) => {

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@use "../variable.scss" as *;
+@use "sass:math" as *;
+
+
+.sentence-list {
+  margin-block: 8q;
+  margin-inline: 8q;
+  line-height: $line-height;
+  text-align: justify;
+  break-inside: avoid;
+}
+
+.sentence-item {
+  margin-block: 4q;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  break-inside: avoid;
+}
+
+.sentence-item-shaleian {
+  font-size: 125%;
+  flex: 5 5 0q;
+}
+
+.sentence-item-japanese {
+  flex: 4 4 0q;
+}
+
+.sentence-emphasis {
+  .sentence-item-shaleian & {
+    padding-inline: 0.2em;
+    border: solid $border-width $dark-color;
+  }
+  .sentence-item-japanese & {
+    text-decoration-line: underline;
+    text-decoration-color: $dark-color;
+    text-decoration-thickness: $border-width;
+  }
+}

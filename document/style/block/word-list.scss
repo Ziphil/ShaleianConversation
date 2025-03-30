@@ -12,6 +12,7 @@
   padding-block-start: 16q;
   padding-block-end: $page-margin-bottom;
   column-gap: 20q;
+  font-size: 90%;
   transform: translate(0q, $page-margin-bottom);
   line-height: $line-height;
   background-color: $light-color;
@@ -52,7 +53,7 @@
 }
 
 .word-item-shaleian {
-  min-width: 44q;
+  min-width: 72q;
   font-weight: bold;
   display: inline-block;
 }

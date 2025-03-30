@@ -3,7 +3,7 @@
 
 
 \lesson|id="first"|<
-  \title<あなたは学生ですか?>
+  \title<私は学生です。>
 
   \goal<
     \li<基本的な挨拶を覚えましょう。>
@@ -81,22 +81,32 @@
           \wd<\sh<{fit}>\pr<フィー>>
           \wd<\sh<{e}>\pr<テ>>
         >
+        \wd<\sh<{pet}>\pr<ペート>>[?]
+        \em*<
+          \wd<\sh<{pa}>\pr<パ>>
+          \wd<\sh<{e}>\pr<レ>>
+        >
         \wd<\sh<{soxal}>\pr<ソシャール>>[?]
       >
     >
     \li<
       \name<{ʻxastil}>
       \sen<
-        \wd<\sh<{ya}>\pr<ヤー>>[,]
+        \wd<\sh<{du}>\pr<ドゥー>>[,]
+        \em*<
+          \wd<\sh<{dusalat}>\pr<ドゥサーラ>>
+          \wd<\sh<{a}>\pr<タ>>
+          \wd<\sh<{fit}>\pr<フィー>>
+          \wd<\sh<{e}>\pr<テ>>
+        >
+        \wd<\sh<{soxal}>\pr<ソシャール>>[.]
         \em*<
           \wd<\sh<{salat}>\pr<サーラ>>
           \wd<\sh<{a}>\pr<タ>>
           \wd<\sh<{fit}>\pr<フィー>>
           \wd<\sh<{e}>\pr<テ>>
         >
-        \wd<\sh<{soxal}>\pr<ソシャール>>[.]
-        \wd<\sh<{s'e}>\pr<セ>>
-        \wd<\sh<{anisxok}>\pr<ラニッショーク>>[.]
+        \wd<\sh<{xoqlacat}>\pr<ショズラツァート>>[?]
       >
     >
   >
@@ -120,11 +130,11 @@
     >
     \li<
       \name<カオル>
-      \sen<これは教科書ですか?>
+      \sen<これは何ですか? 教科書ですか?>
     >
     \li<
       \name<シャスティル>
-      \sen<はい、これは教科書です。おもしろいですよ。>
+      \sen<いいえ、これは教科書ではありません。これは小説です。>
     >
 
   >
@@ -141,10 +151,11 @@
     \li<\cat<間>\sh<{ya}>\eql<\li<\cat<間>\ja<はい>>>>
     \li<\cat<名>\sh<{tel}>\eql<\li<\cat<名>\ja<私>>>>
     \li<\cat<特>\sh<{voc}>\shc<({evoc})>\eql<\li<\cat<特>\ja<も>>>>
-    \li<\cat<間>\sh<{dife}>\eql<\li<\cat<間>\ja<よろしく>>>>
+    \li<\cat<間>\sh<{dilfe}>\eql<\li<\cat<間>\ja<よろしく>>>>
     \li<\cat<名>\sh<{fit}>\eql<\li<\cat<名>\ja<これ>>>>
+    \li<\cat<名>\sh<{pet}>\eql<\li<\cat<名>\ja<何>>>>
     \li<\cat<名>\sh<{soxal}>\eql<\li<\cat<名>\ja<教科書, 参考書>>>>
-    \li<\cat<動>\sh<{nisxok}>\shc<({anisxok})>\eql<\li<\cat<形>\ja<おもしろい>>>>
+    \li<\cat<動>\sh<{xoqlacat}>\eql<\li<\cat<名>\ja<小説>>>>
   >
 
 >
